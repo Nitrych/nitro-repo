@@ -1,0 +1,72 @@
+form input.wt_gr,
+form textarea.wt_gr,
+form select.wt_gr {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #AEAEAE;
+    padding: 5px;
+	width: 268px;
+}
+form input[type="submit"] {
+    cursor: pointer;
+}
+form .row {
+	padding: 10px;
+	margin-top: 1px;
+}
+form .row.error {
+	background: none repeat scroll 0 0 #FFE7E7;
+}
+form .row.success {
+	background: none repeat scroll 0 0 #EFFDBC;
+}
+form .row label {
+	font-weight: 700;
+	width: 190px;
+	margin: 10px 20px 0 0;
+}
+form .row label span.required {
+	color: #C91414;
+}
+form .row.rule_agreement label {
+	font-weight: 300;
+	margin: 0;
+}
+.bg_success {
+	background: none repeat scroll 0 0 #EFFDBC;
+}
+.button, .button > * {
+    cursor: pointer;
+    height: 28px;
+    line-height: 28px;
+	display: inline-block;
+    white-space: nowrap;
+}
+.button > * {
+    padding: 0 15px;
+}
+.button {
+    background-color: #5E97EB;
+    background-image: -moz-linear-gradient(center top , #5E97EB 0%, #2B67C0 100%);
+    border: 1px solid #2462A0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    font-weight: bold;
+}
+.button input[type="submit"] {
+    background: url("/images/blank.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    font-weight: bold;
+    vertical-align: top;
+}
+.button.small, .button.small > * {
+    height: 20px;
+    line-height: 20px !important;
+}
+.button.middle, .button.middle > * {
+    height: 24px;
+    line-height: 24px !important;
+}
+.button.E5 {
+    background-color: #E5E5E5;
+    background-image: -moz-linear-gradient(center top , #FEFEFE 0%, #E5E5E5 100%);
+    border-color: #C6C6C6;
+}

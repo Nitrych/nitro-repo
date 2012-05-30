@@ -1,0 +1,1627 @@
+2012/04/24 18:21:53 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.password" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/web/helpers/CHtml.php(2044): CComponent->__get('password')
+#1 /var/www/auto-board/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'password')
+#2 /var/www/auto-board/framework/web/helpers/CHtml.php(1238): CHtml::activeInputField('password', Object(RegistrationForm), 'password', Array)
+#3 /var/www/auto-board/framework/web/widgets/CActiveForm.php(605): CHtml::activePasswordField(Object(RegistrationForm), 'password', Array)
+#4 /var/www/auto-board/auto-board/protected/views/account/registration.php(23): CActiveForm->passwordField(Object(RegistrationForm), 'password')
+#5 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#6 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#7 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#8 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('registration', Array, true)
+#9 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(38): CController->render('registration', Array)
+#10 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#11 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/account/registration/
+---
+2012/04/26 11:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "acount/registration".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('acount/registra...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/acount/registration/
+---
+2012/04/26 11:40:44 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.repassword" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/web/helpers/CHtml.php(2044): CComponent->__get('repassword')
+#1 /var/www/auto-board/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'repassword')
+#2 /var/www/auto-board/framework/web/helpers/CHtml.php(1238): CHtml::activeInputField('password', Object(RegistrationForm), 'repassword', Array)
+#3 /var/www/auto-board/framework/web/widgets/CActiveForm.php(605): CHtml::activePasswordField(Object(RegistrationForm), 'repassword', Array)
+#4 /var/www/auto-board/auto-board/protected/views/account/registration.php(34): CActiveForm->passwordField(Object(RegistrationForm), 'repassword', Array)
+#5 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#6 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#7 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#8 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('registration', Array, true)
+#9 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(52): CController->render('registration', Array)
+#10 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#11 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/account/registration/
+---
+2012/04/26 11:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 11:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 11:42:56 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.re_password" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/web/helpers/CHtml.php(2044): CComponent->__get('re_password')
+#1 /var/www/auto-board/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 're_password')
+#2 /var/www/auto-board/framework/web/helpers/CHtml.php(1238): CHtml::activeInputField('password', Object(RegistrationForm), 're_password', Array)
+#3 /var/www/auto-board/framework/web/widgets/CActiveForm.php(605): CHtml::activePasswordField(Object(RegistrationForm), 're_password', Array)
+#4 /var/www/auto-board/auto-board/protected/views/account/registration.php(34): CActiveForm->passwordField(Object(RegistrationForm), 're_password', Array)
+#5 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#6 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#7 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#8 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('registration', Array, true)
+#9 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(52): CController->render('registration', Array)
+#10 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#11 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/account/registration/
+---
+2012/04/26 11:48:23 [error] [php] include(/var/www/auto-board/auto-board/protected/models/User.php): failed to open stream: Permission denied (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(378): spl_autoload_call()
+#1 /var/www/auto-board/framework/validators/CUniqueValidator.php(87): model()
+#2 /var/www/auto-board/framework/validators/CValidator.php(197): CUniqueValidator->validateAttribute()
+#3 /var/www/auto-board/framework/base/CModel.php(158): CUniqueValidator->validate()
+#4 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(45): RegistrationForm->validate()
+#5 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#6 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/auto-board/framework/web/CController.php(287): AccountController->runAction()
+#8 /var/www/auto-board/framework/web/CController.php(266): AccountController->runActionWithFilters()
+#9 /var/www/auto-board/framework/web/CWebApplication.php(276): AccountController->run()
+#10 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/account/registration/
+in /var/www/auto-board/auto-board/protected/controllers/AccountController.php (45)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/04/26 11:51:26 [error] [exception.CException] exception 'CException' with message 'Property "User.created_date" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(160): CComponent->__set('created_date', 1335430286)
+#1 /var/www/auto-board/auto-board/protected/models/User.php(70): CActiveRecord->__set('created_date', 1335430286)
+#2 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(47): User->saveNewUser('andrew', '123456', 'andrey@example....')
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/account/registration/
+HTTP_REFERER=http://auto-board/account/registration/
+---
+2012/04/26 11:52:45 [error] [exception.CException] exception 'CException' with message 'Property "User.is_active" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(160): CComponent->__set('is_active', 0)
+#1 /var/www/auto-board/auto-board/protected/models/User.php(71): CActiveRecord->__set('is_active', 0)
+#2 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(47): User->saveNewUser('andrew', '123456', 'andrey@example....')
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/account/registration/
+HTTP_REFERER=http://auto-board/account/registration/
+---
+2012/04/26 11:53:04 [error] [exception.CException] exception 'CException' with message 'Property "User.confirm_key" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(160): CComponent->__set('confirm_key', '5f01e7558f85ce4...')
+#1 /var/www/auto-board/auto-board/protected/models/User.php(55): CActiveRecord->__set('confirm_key', '5f01e7558f85ce4...')
+#2 /var/www/auto-board/auto-board/protected/models/User.php(72): User->generateConfirmKey()
+#3 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(47): User->saveNewUser('andrew', '123456', 'andrey@example....')
+#4 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#5 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#9 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#10 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/account/registration/
+HTTP_REFERER=http://auto-board/account/registration/
+---
+2012/04/26 11:58:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/auto-board/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/auto-board/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/auto-board/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/auto-board/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/auto-board/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/auto-board/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/auto-board/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/auto-board/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 /var/www/auto-board/framework/validators/CUniqueValidator.php(87): CActiveRecord::model('User')
+#8 /var/www/auto-board/framework/validators/CValidator.php(197): CUniqueValidator->validateAttribute(Object(RegistrationForm), 'email')
+#9 /var/www/auto-board/framework/base/CModel.php(158): CValidator->validate(Object(RegistrationForm), NULL)
+#10 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(45): CModel->validate()
+#11 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#12 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('registration')
+#16 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#17 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/account/registration/
+HTTP_REFERER=http://auto-board/account/registration/
+---
+2012/04/26 12:25:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'auto-board.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in /var/www/auto-board/auto-board/protected/controllers/SiteController.php (33)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/04/26 12:25:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "post" for active record class "Post" cannot be found in the database.' in /var/www/auto-board/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#1 /var/www/auto-board/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Post')
+#2 /var/www/auto-board/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(33): CActiveRecord->__construct()
+#4 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#10 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2012/04/26 12:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "accoount/registration".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('accoount/regist...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/accoount/registration/
+---
+2012/05/04 13:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 13:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 13:42:50 [error] [php] require(/var/www/auto-board/auto-board/protected/views/layouts/main.php): failed to open stream: Permission denied (/var/www/auto-board/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(785): AccountController->renderFile()
+#1 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(53): AccountController->render()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionRegistration()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/auto-board/framework/web/CController.php(287): AccountController->runAction()
+#5 /var/www/auto-board/framework/web/CController.php(266): AccountController->runActionWithFilters()
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): AccountController->run()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/account/registration/
+in /var/www/auto-board/auto-board/protected/controllers/AccountController.php (53)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 13:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/registration".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/account/registration/
+---
+2012/05/04 13:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/registration".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/account/registration/
+---
+2012/05/04 13:50:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2012/05/04 13:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2012/05/04 13:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2012/05/04 13:51:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/registration".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/registr...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/account/registration/
+---
+2012/05/04 14:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "зщые.".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('????????.')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/%D0%B7%D1%89%D1%8B%D0%B5.
+---
+2012/05/04 14:33:37 [error] [exception.CException] exception 'CException' with message 'PostController cannot find the requested view "index".' in /var/www/auto-board/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /var/www/auto-board/auto-board/protected/controllers/PostController.php(36): CController->render('index')
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/post/
+---
+2012/05/04 14:36:18 [error] [php] require(/var/www/auto-board/auto-board/protected/views/post/index.php): failed to open stream: Permission denied (/var/www/auto-board/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(870): PostController->renderFile()
+#1 /var/www/auto-board/framework/web/CController.php(783): PostController->renderPartial()
+#2 /var/www/auto-board/auto-board/protected/controllers/PostController.php(37): PostController->render()
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/auto-board/framework/web/CController.php(287): PostController->runAction()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (37)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 14:38:12 [error] [exception.CException] exception 'CException' with message 'Property "Post.time" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('time')
+#1 /var/www/auto-board/auto-board/protected/views/post/index.php(9): CActiveRecord->__get('time')
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/PostController.php(37): CController->render('index', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/post/
+---
+2012/05/04 14:46:39 [error] [exception.CException] exception 'CException' with message 'Property "Post.time" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('time')
+#1 /var/www/auto-board/auto-board/protected/views/post/index.php(9): CActiveRecord->__get('time')
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/PostController.php(37): CController->render('index', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/post/
+---
+2012/05/04 14:50:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in /var/www/auto-board/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(271): CController->missingAction('add')
+#1 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('add')
+#2 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/add')
+#3 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/post/add/
+---
+2012/05/04 14:58:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'auto-board.category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `category`.
+in /var/www/auto-board/auto-board/protected/models/Category.php (7)
+in /var/www/auto-board/auto-board/protected/controllers/AjaxController.php (31)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 14:58:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "category" for active record class "Category" cannot be found in the database.' in /var/www/auto-board/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Category))
+#1 /var/www/auto-board/auto-board/protected/models/Category.php(7): CActiveRecord::model('Category')
+#2 /var/www/auto-board/auto-board/protected/controllers/AjaxController.php(31): Category::model()
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AjaxController->actionCategory()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('category')
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('ajax/category')
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ajax/category/
+HTTP_REFERER=http://auto-board/post/addNewPost/
+---
+2012/05/04 15:02:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/auto-board/auto-board/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/auto-board/framework/web/CAssetManager.php:116
+Stack trace:
+#0 /var/www/auto-board/framework/web/CAssetManager.php(101): CAssetManager->setBasePath('/var/www/auto-b...')
+#1 /var/www/auto-board/framework/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /var/www/auto-board/framework/web/CClientScript.php(449): CAssetManager->publish('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 /var/www/auto-board/framework/web/CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 /var/www/auto-board/framework/web/CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 /var/www/auto-board/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html"...')
+#7 /var/www/auto-board/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html"...')
+#8 /var/www/auto-board/auto-board/protected/controllers/PostController.php(70): CController->render('add', Array)
+#9 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#10 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 15:04:01 [error] [exception.CException] exception 'CException' with message 'Property "Category.name" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/auto-board/auto-board/protected/views/ajax/category.php(6): CActiveRecord->__get('name')
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('category', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/AjaxController.php(32): CController->render('category', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AjaxController->actionCategory()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('category')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('ajax/category')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ajax/category/
+HTTP_REFERER=http://auto-board/post/addNewPost/
+---
+2012/05/04 15:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/fancybox_sprite.png".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('images/fancybox...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/fancybox_sprite.png
+HTTP_REFERER=http://auto-board/css/jquery.fancybox.css
+---
+2012/05/04 15:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/fancybox_loading.gif".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('images/fancybox...')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/fancybox_loading.gif
+HTTP_REFERER=http://auto-board/css/jquery.fancybox.css
+---
+2012/05/04 17:00:58 [error] [exception.CException] exception 'CException' with message 'Property "DomenFilter.actions" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(10): CComponent->__get('actions')
+#1 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#6 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#7 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:01:41 [error] [exception.CException] exception 'CException' with message 'Property "DomenFilter.actions" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(10): CComponent->__get('actions')
+#1 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#6 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#7 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:01:42 [error] [exception.CException] exception 'CException' with message 'Property "DomenFilter.actions" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(10): CComponent->__get('actions')
+#1 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#6 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#7 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:02:29 [error] [exception.CException] exception 'CException' with message 'Property "DomenFilter.actions" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(10): CComponent->__get('actions')
+#1 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#6 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#7 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:02:30 [error] [exception.CException] exception 'CException' with message 'Property "DomenFilter.actions" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(10): CComponent->__get('actions')
+#1 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#6 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#7 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:09:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:09:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:09:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:09:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:19:55 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.config" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/base/CModule.php(106): CComponent->__get('config')
+#1 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(11): CModule->__get('config')
+#2 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#4 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:27:10 [error] [exception.CException] exception 'CException' with message 'CAttributeCollection and its behaviors do not have a method or closure named "getBaseServerName".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(11): CComponent->__call('getBaseServerNa...', Array)
+#1 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(11): CAttributeCollection->getBaseServerName()
+#2 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#4 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:27:11 [error] [exception.CException] exception 'CException' with message 'CAttributeCollection and its behaviors do not have a method or closure named "getBaseServerName".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(11): CComponent->__call('getBaseServerNa...', Array)
+#1 /var/www/auto-board/auto-board/protected/filters/DomenFilter.php(11): CAttributeCollection->getBaseServerName()
+#2 /var/www/auto-board/framework/web/filters/CFilter.php(39): DomenFilter->preFilter(Object(CFilterChain))
+#3 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#4 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/04 17:47:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:47:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/04 17:48:56 [error] [exception.CException] exception 'CException' with message 'Property "Category.name" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/auto-board/auto-board/protected/views/ajax/category.php(6): CActiveRecord->__get('name')
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('category', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/AjaxController.php(32): CController->render('category', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AjaxController->actionCategory()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('category')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('ajax/category')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ajax/category/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/04 17:49:06 [error] [exception.CException] exception 'CException' with message 'Property "Category.name" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/auto-board/auto-board/protected/views/ajax/category.php(6): CActiveRecord->__get('name')
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('category', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/AjaxController.php(32): CController->render('category', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AjaxController->actionCategory()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('category')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('ajax/category')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ajax/category/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/04 17:55:26 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 17:55:26 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 17:55:26 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 17:55:26 [error] [exception.CException] exception 'CException' with message 'Property "Post.creator_id" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(160): CComponent->__set('creator_id', 1)
+#1 /var/www/auto-board/auto-board/protected/models/Post.php(49): CActiveRecord->__set('creator_id', 1)
+#2 /var/www/auto-board/auto-board/protected/controllers/PostController.php(75): Post->createNew(Object(PostForm))
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#8 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#9 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#11 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#12 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/04 17:56:34 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 17:56:34 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 17:56:34 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (71)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 18:03:15 [error] [exception.CException] exception 'CException' with message 'AccountController cannot find the requested view "index".' in /var/www/auto-board/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(32): CController->render('index')
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account//login')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/account//login/
+---
+2012/05/04 18:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/auto-board/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/auto-board/framework/web/CController.php(271): CController->missingAction('login')
+#1 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('login')
+#2 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/login')
+#3 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/account/login/
+---
+2012/05/04 18:12:28 [error] [php] include(bool.php): failed to open stream: No such file or directory (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/framework/validators/CValidator.php(171): import()
+#1 /var/www/auto-board/framework/base/CModel.php(285): createValidator()
+#2 /var/www/auto-board/framework/base/CModel.php(259): LoginForm->createValidators()
+#3 /var/www/auto-board/framework/base/CModel.php(302): LoginForm->getValidators()
+#4 /var/www/auto-board/framework/web/helpers/CHtml.php(1185): LoginForm->isAttributeRequired()
+#5 /var/www/auto-board/framework/web/widgets/CActiveForm.php(560): activeLabelEx()
+#6 /var/www/auto-board/auto-board/protected/views/account/login.php(15): CActiveForm->labelEx()
+#7 /var/www/auto-board/framework/web/CBaseController.php(127): require()
+#8 /var/www/auto-board/framework/web/CBaseController.php(96): AccountController->renderInternal()
+#9 /var/www/auto-board/framework/web/CController.php(870): AccountController->renderFile()
+#10 /var/www/auto-board/framework/web/CController.php(783): AccountController->renderPartial()
+#11 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(79): AccountController->render()
+#12 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionLogin()
+#13 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#14 /var/www/auto-board/framework/web/CController.php(287): AccountController->runAction()
+#15 /var/www/auto-board/framework/web/CController.php(266): AccountController->runActionWithFilters()
+#16 /var/www/auto-board/framework/web/CWebApplication.php(276): AccountController->run()
+#17 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#18 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/account/login/
+in /var/www/auto-board/auto-board/protected/views/account/login.php (15)
+in /var/www/auto-board/auto-board/protected/controllers/AccountController.php (79)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/04 18:29:12 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.rememberMe" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/web/helpers/CHtml.php(2044): CComponent->__get('rememberMe')
+#1 /var/www/auto-board/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(LoginForm), 'rememberMe')
+#2 /var/www/auto-board/framework/web/widgets/CActiveForm.php(665): CHtml::activeCheckBox(Object(LoginForm), 'rememberMe', Array)
+#3 /var/www/auto-board/auto-board/protected/views/account/login.php(29): CActiveForm->checkBox(Object(LoginForm), 'rememberMe')
+#4 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#5 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#6 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#7 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#8 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(79): CController->render('login', Array)
+#9 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionLogin()
+#10 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('login')
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/login')
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/account/login/
+---
+2012/05/04 18:31:15 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/models/LoginForm.php(60): CComponent->__get('username')
+#1 /var/www/auto-board/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 /var/www/auto-board/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 /var/www/auto-board/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 /var/www/auto-board/auto-board/protected/controllers/AccountController.php(75): CModel->validate()
+#5 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): AccountController->actionLogin()
+#6 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('login')
+#10 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('account/login')
+#11 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/account/login/
+HTTP_REFERER=http://www.auto-board.com/account/login/
+---
+2012/05/04 18:40:06 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CComponent->__call('isGuest', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CWebUser->isGuest()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/05/04 18:40:20 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isUserGuest".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CComponent->__call('isUserGuest', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CWebUser->isUserGuest()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/05/04 18:40:31 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuestUser".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CComponent->__call('isGuestUser', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CWebUser->isGuestUser()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/05/04 18:40:32 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuestUser".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CComponent->__call('isGuestUser', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CWebUser->isGuestUser()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/05/04 18:41:20 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CComponent->__call('isGuest', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/SiteController.php(32): CWebUser->isGuest()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#8 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/05/07 13:37:06 [error] [exception.CException] exception 'CException' with message 'Property "PostForm.rule_agreement" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/web/helpers/CHtml.php(2044): CComponent->__get('rule_agreement')
+#1 /var/www/auto-board/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(PostForm), 'rule_agreement')
+#2 /var/www/auto-board/framework/web/widgets/CActiveForm.php(665): CHtml::activeCheckBox(Object(PostForm), 'rule_agreement', Array)
+#3 /var/www/auto-board/auto-board/protected/views/post/add.php(112): CActiveForm->checkBox(Object(PostForm), 'rule_agreement')
+#4 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#5 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#6 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#7 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('add', Array, true)
+#8 /var/www/auto-board/auto-board/protected/controllers/PostController.php(79): CController->render('add', Array)
+#9 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#10 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#14 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#15 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#17 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#18 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/07 16:02:05 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textInputFile".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CComponent->__call('textInputFile', Array)
+#1 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CActiveForm->textInputFile(Object(PostForm), 'img', Array)
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('add', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/PostController.php(81): CController->render('add', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/07 16:02:29 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "InputFile".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CComponent->__call('InputFile', Array)
+#1 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CActiveForm->InputFile(Object(PostForm), 'img', Array)
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('add', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/PostController.php(81): CController->render('add', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/07 16:02:45 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "File".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CComponent->__call('File', Array)
+#1 /var/www/auto-board/auto-board/protected/views/post/add.php(76): CActiveForm->File(Object(PostForm), 'img', Array)
+#2 /var/www/auto-board/framework/web/CBaseController.php(127): require('/var/www/auto-b...')
+#3 /var/www/auto-board/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/auto-b...', Array, true)
+#4 /var/www/auto-board/framework/web/CController.php(870): CBaseController->renderFile('/var/www/auto-b...', Array, true)
+#5 /var/www/auto-board/framework/web/CController.php(783): CController->renderPartial('add', Array, true)
+#6 /var/www/auto-board/auto-board/protected/controllers/PostController.php(81): CController->render('add', Array)
+#7 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#8 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#13 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#15 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#16 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/07 16:08:33 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:08:33 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:08:33 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:08:33 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:09:53 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:09:53 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:09:53 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:09:53 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:22:08 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:22:08 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:22:08 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:22:08 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:22:08 [error] [php] move_uploaded_file(/images/foto/1/1.jpg): failed to open stream: No such file or directory (/var/www/auto-board/framework/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (80)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:23:29 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:23:29 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:23:29 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:23:29 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:23:29 [error] [php] move_uploaded_file(/images/foto/1.jpg): failed to open stream: No such file or directory (/var/www/auto-board/framework/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (80)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:36 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:36 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:36 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:36 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:36 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "config".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/PostController.php(79): CComponent->__call('config', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/PostController.php(79): CWebApplication->config()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#8 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#10 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#11 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/07 16:26:51 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:51 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:51 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:51 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:26:51 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getConfig".' in /var/www/auto-board/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/controllers/PostController.php(79): CComponent->__call('getConfig', Array)
+#1 /var/www/auto-board/auto-board/protected/controllers/PostController.php(79): CWebApplication->getConfig()
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#8 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#10 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#11 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/07 16:31:18 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:31:18 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:31:18 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:31:18 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:31:18 [error] [php] move_uploaded_file(/var/www/auto-board/auto-board/protected/../images/foto/1.jpg): failed to open stream: Permission denied (/var/www/auto-board/framework/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (82)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:32:24 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:32:24 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:32:24 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:32:24 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:33:05 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:33:05 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:33:05 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:33:05 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:33:05 [error] [php] move_uploaded_file(/var/www/auto-board/auto-board/protected/../images/foto/1/1.jpg): failed to open stream: No such file or directory (/var/www/auto-board/framework/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (82)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:16 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:16 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:16 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:16 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:45 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:45 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:45 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:45 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:34:45 [error] [php] move_uploaded_file(/var/www/auto-board/auto-board/protected/../images/foto/1/1.jpg): failed to open stream: Permission denied (/var/www/auto-board/framework/web/CUploadedFile.php:197)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (82)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:41:55 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:41:55 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:41:55 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:41:55 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:42:44 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:42:44 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:42:44 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:42:44 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:46:59 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:46:59 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:46:59 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:46:59 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:46:59 [error] [exception.CException] exception 'CException' with message 'Property "PostForm.phobe_number" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/models/Post.php(53): CComponent->__get('phobe_number')
+#1 /var/www/auto-board/auto-board/protected/controllers/PostController.php(76): Post->createNew(Object(PostForm))
+#2 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#3 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#8 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#10 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#11 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/07 16:48:30 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:48:30 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:48:30 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:48:30 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:56:54 [error] [php] include(Poll.php): failed to open stream: No such file or directory (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(52): spl_autoload_call()
+#1 /var/www/auto-board/framework/web/CBaseController.php(127): require()
+#2 /var/www/auto-board/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /var/www/auto-board/framework/web/CController.php(870): PostController->renderFile()
+#4 /var/www/auto-board/framework/web/CController.php(783): PostController->renderPartial()
+#5 /var/www/auto-board/auto-board/protected/controllers/PostController.php(89): PostController->render()
+#6 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#7 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#11 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/views/post/add.php (52)
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (89)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:57:20 [error] [php] include(Poll.php): failed to open stream: No such file or directory (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(52): spl_autoload_call()
+#1 /var/www/auto-board/framework/web/CBaseController.php(127): require()
+#2 /var/www/auto-board/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /var/www/auto-board/framework/web/CController.php(870): PostController->renderFile()
+#4 /var/www/auto-board/framework/web/CController.php(783): PostController->renderPartial()
+#5 /var/www/auto-board/auto-board/protected/controllers/PostController.php(89): PostController->render()
+#6 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#7 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#11 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/views/post/add.php (52)
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (89)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:58:14 [error] [php] include(Poll.php): failed to open stream: No such file or directory (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(52): spl_autoload_call()
+#1 /var/www/auto-board/framework/web/CBaseController.php(127): require()
+#2 /var/www/auto-board/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /var/www/auto-board/framework/web/CController.php(870): PostController->renderFile()
+#4 /var/www/auto-board/framework/web/CController.php(783): PostController->renderPartial()
+#5 /var/www/auto-board/auto-board/protected/controllers/PostController.php(89): PostController->render()
+#6 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#7 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#11 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/views/post/add.php (52)
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (89)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 16:58:17 [error] [php] include(Poll.php): failed to open stream: No such file or directory (/var/www/auto-board/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/auto-board/auto-board/protected/views/post/add.php(52): spl_autoload_call()
+#1 /var/www/auto-board/framework/web/CBaseController.php(127): require()
+#2 /var/www/auto-board/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /var/www/auto-board/framework/web/CController.php(870): PostController->renderFile()
+#4 /var/www/auto-board/framework/web/CController.php(783): PostController->renderPartial()
+#5 /var/www/auto-board/auto-board/protected/controllers/PostController.php(89): PostController->render()
+#6 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#7 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#11 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/views/post/add.php (52)
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (89)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:15 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:15 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:15 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:15 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:15 [error] [exception.CException] exception 'CException' with message 'Property "PostForm.img" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/validators/CFileValidator.php(144): CComponent->__get('img')
+#1 /var/www/auto-board/framework/validators/CValidator.php(197): CFileValidator->validateAttribute(Object(PostForm), 'img')
+#2 /var/www/auto-board/framework/base/CModel.php(158): CValidator->validate(Object(PostForm), NULL)
+#3 /var/www/auto-board/auto-board/protected/controllers/PostController.php(73): CModel->validate()
+#4 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#5 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#9 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/07 17:37:55 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:55 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:55 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:55 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:37:55 [error] [exception.CException] exception 'CException' with message 'Property "PostForm.img" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/validators/CFileValidator.php(144): CComponent->__get('img')
+#1 /var/www/auto-board/framework/validators/CValidator.php(197): CFileValidator->validateAttribute(Object(PostForm), 'img')
+#2 /var/www/auto-board/framework/base/CModel.php(158): CValidator->validate(Object(PostForm), NULL)
+#3 /var/www/auto-board/auto-board/protected/controllers/PostController.php(73): CModel->validate()
+#4 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#5 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#9 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#12 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#13 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/post/addNewPost/
+HTTP_REFERER=http://www.auto-board.com/post/addNewPost/
+---
+2012/05/07 17:38:36 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:38:36 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:38:36 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:38:36 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:46:20 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:46:20 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:46:20 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:46:20 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:47:07 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:47:07 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:47:07 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 17:47:07 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:15:51 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:15:51 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:15:51 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:15:51 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:37:30 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:37:30 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:37:30 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:37:30 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:46:17 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:46:17 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:46:17 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:46:17 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:47:40 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:47:40 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:47:40 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:47:40 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:50:10 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:50:10 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:50:10 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/07 18:50:10 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (72)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/08 11:48:07 [error] [exception.CException] exception 'CException' with message 'Property "Domen.city_ru" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/auto-board/framework/db/ar/CActiveRecord.php(144): CComponent->__get('city_ru')
+#1 /var/www/auto-board/auto-board/protected/models/Domen.php(48): CActiveRecord->__get('city_ru')
+#2 /var/www/auto-board/auto-board/protected/controllers/PostController.php(69): Domen->getCitiesForDropdown()
+#3 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#4 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#8 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#9 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#11 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#12 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/08 12:02:56 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.orderby" is not defined.' in /var/www/auto-board/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/auto-board/framework/db/schema/CDbCriteria.php(153): CComponent->__set('orderby', NULL)
+#1 /var/www/auto-board/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /var/www/auto-board/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/auto-board/framework/db/ar/CActiveRecord.php(1471): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, Array, Array, '`t`.')
+#4 /var/www/auto-board/auto-board/protected/models/Domen.php(46): CActiveRecord->findAllByAttributes(Array, Array)
+#5 /var/www/auto-board/auto-board/protected/controllers/PostController.php(69): Domen->getCitiesForDropdown()
+#6 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#7 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/auto-board/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/auto-board/framework/web/CWebApplication.php(276): CController->run('addNewPost')
+#14 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNewPost')
+#15 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/post/addNewPost/
+---
+2012/05/08 12:05:24 [error] [php] Missing argument 1 for CActiveRecord::findAllByAttributes(), called in /var/www/auto-board/auto-board/protected/models/Domen.php on line 46 and defined (/var/www/auto-board/framework/db/ar/CActiveRecord.php:1467)
+Stack trace:
+#0 /var/www/auto-board/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#1 /var/www/auto-board/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/auto-board/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#3 /var/www/auto-board/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /var/www/auto-board/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#5 /var/www/auto-board/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/auto-board/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /var/www/auto-board/framework/web/CWebApplication.php(276): PostController->run()
+#8 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/auto-board/auto-board/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/auto-board/auto-board/protected/models/Domen.php (46)
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (69)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/08 13:40:28 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (73)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/08 13:40:28 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (73)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/08 13:40:28 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (73)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/08 13:40:28 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/auto-board/auto-board/protected/controllers/PostController.php (73)
+in /var/www/auto-board/auto-board/index.php (13)
+2012/05/17 13:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/17 13:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/auto-board/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/auto-board/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/auto-board/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/auto-board/auto-board/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

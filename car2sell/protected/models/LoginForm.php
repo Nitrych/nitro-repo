@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * RegistrationForm class.
+ * RegistrationForm is the data structure for keeping
+ * registration form data. It is used by the 'registration' action of 'AccountController'.
+ */
+class LoginForm extends CFormModel
+{
+
+	public $email;
+	public $password;
+	public $rememberMe;
+	public $verifyCode;
+	private $_identity;
+
+	/**
+	 * Declares the validation rules.
+	 */
+	public function rules()
+	{
+		return array(
+			// username and password and email are required
+			array('password, email', 'required','message'=>'Ето поле не может быть пустым.'),
+            // passsword min length 6 chars
+			array('password', 'length', 'min'=>'6', 'tooShort'=>'Длина пароля не менее 6 символов.'),
+			array('password', 'authenticate'),
+            // email is email
+			array('email', 'email','message'=>'Неверный формат електронного адреса.'),
+            // email is unique
+			array('rememberMe', 'boolean'),
+            // verifyCode needs to be entered correctly
+			//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'message'=>'Введенный вами код неверен.'),
+		);
+	}
+
+	/**
+	 * Declares customized attribute labels.
+	 * If not declared here, an attribute would have a label that is
+	 * the same as its name with the first letter in upper case.
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'verifyCode' => 'Verification Code',
+			'email' => 'Email-адрес',
+			'password' => 'Пароль',
+			'rememberMe' => 'Запомнить меня',
+		);
+	}
+
+	/**
+	 * Authenticates the password.
+	 * This is the 'authenticate' validator as declared in rules().
+	 */
+	public function authenticate($attribute,$params)
+	{
+		if(!$this->hasErrors())
+		{
+			$this->_identity=new UserIdentity($this->email,$this->password);
+			if(!$this->_identity->authenticate())
+				$this->addError('password','Incorrect username or password.');
+		}
+	}
+
+	/**
+	 * Logs in the user using the given username and password in the model.
+	 * @return boolean whether login is successful
+	 */
+	public function login()
+	{
+		if($this->_identity===null)
+		{
+			$this->_identity=new UserIdentity($this->email,$this->password);
+			$this->_identity->authenticate();
+		}
+		if($this->_identity->errorCode===UserIdentity::ERROR_NONE)
+		{
+			$duration=$this->rememberMe ? 3600*24*30 : 0; // 30 days
+			Yii::app()->user->login($this->_identity,$duration);
+			return true;
+		}
+		else
+			return false;
+	}
+}
