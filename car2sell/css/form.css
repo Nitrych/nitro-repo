@@ -24,6 +24,9 @@ form .row label {
 	width: 190px;
 	margin: 10px 20px 0 0;
 }
+form#login-form .row label {
+	width: 130px;
+}
 form .row label span.required {
 	color: #C91414;
 }

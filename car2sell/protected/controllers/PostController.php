@@ -43,7 +43,9 @@ class PostController extends Controller
                     //exit;
                 }
                 $posts = Post::model()->getHomePagePost();
-                $this->render('index', array('posts'=>$posts));
+				$categories = Category::model()->getArrayOfCategory();
+				$cities = Domen::model()->getArrayOfCities();
+                $this->render('index', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
 	}
 
 	/**
@@ -75,9 +77,10 @@ class PostController extends Controller
 			{
 				$image = 'img_'.$i;
 				$model->$image = $_FILES['PostForm']['name'][$image];
-				//echo $model->$image;
 			}
-			//var_dump($_FILES['PostForm']['name']);exit;
+			//var_dump($model->attributes);exit;
+			//echo '<pre>';
+			//print_r($model->attributes);exit;
 			if($model->validate())
 			{
 				//var_dump($model->city);exit;
@@ -111,11 +114,13 @@ class PostController extends Controller
 
 	public function actionShow()
 	{
-		$id = 49;
+		$id = (int)$_GET['id'];
 		$post = Post::model()->findByPk($id);
+		$post->increaseView();
+		$category = Category::model()->findByPk($post->category);
+		$domen = Domen::model()->findByPk($post->domen);
 		$fotos = PostFoto::model()->getAllForPost($post->id);
-		//var_dump($fotos);exit;
-		$this->render('show',array('post'=>$post, 'fotos'=>$fotos));
+		$this->render('show',array('post'=>$post, 'fotos'=>$fotos, 'category'=>$category, 'domen'=>$domen));
 	}
 
 }

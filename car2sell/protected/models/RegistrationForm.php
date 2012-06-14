@@ -13,6 +13,7 @@ class RegistrationForm extends CFormModel
 	public $password;
 	public $re_password;
 	public $verifyCode;
+	public $accept;
 
 	/**
 	 * Declares the validation rules.
@@ -21,19 +22,18 @@ class RegistrationForm extends CFormModel
 	{
 		return array(
 			// username and password and email are required
-			array('username, password, email, re_password', 'required','message'=>'Ето поле не может быть пустым.'),
-            // username min length 2 chars
-			array('username', 'length', 'min'=>'2', 'tooShort'=>'Длина никнейма не менее 2 символов.'),
+			array('accept, password, email, re_password', 'required','message'=>'Ето поле не может быть пустым'),
             // passsword min length 6 chars
-			array('password', 'length', 'min'=>'6', 'tooShort'=>'Длина пароля не менее 6 символов.'),
+			array('password', 'length', 'min'=>'6', 'tooShort'=>'Длина пароля не менее 6 символов'),
             // email is email
-			array('email', 'email','message'=>'Неверный формат електронного адреса.'),
+			array('email', 'email','message'=>'Неверный формат електронного адреса'),
             // email is unique
-			array('email', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'email', 'message'=>'Данный електронный адресс уже используется.'),
+			array('email', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'email', 'message'=>'Данный електронный адресс уже используется'),
             // email is unique
-			array('username', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'username', 'message'=>'Данный псевдоним уже используется.'),
+			array('username', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'username', 'message'=>'Данный псевдоним уже используется'),
             // password and re_password are equal
-			array('re_password', 'compare','compareAttribute'=>'password', 'message'=>'Пароли не совпадают.'),
+			array('re_password', 'compare','compareAttribute'=>'password', 'message'=>'Пароли не совпадают'),
+			array('accept', 'boolean'),
             // verifyCode needs to be entered correctly
 			//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'message'=>'Введенный вами код неверен.'),
 		);

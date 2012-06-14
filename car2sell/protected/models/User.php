@@ -1,6 +1,7 @@
 <?php
 class User extends CActiveRecord
 {
+	const ACTIVATION_SUCCESS = 1, ACTIVATION_ERROR = 2;
 
     public static function model($className=__CLASS__)
     {
@@ -23,7 +24,7 @@ class User extends CActiveRecord
 	// NOTE: you should only define rules for those attributes that
 	// will receive user inputs.
 	return array(
-		array('username, password, email', 'required'),
+		array('password, email', 'required'),
         array('email', 'email'),
 		array('username, password, email', 'length', 'max'=>128),
     	);
@@ -61,9 +62,8 @@ class User extends CActiveRecord
     /**
      * @save new user in database
      */
-    public function saveNewUser($username, $password, $email)
+    public function saveNewUser($password, $email)
     {
-        $this->username = $username;
         $this->password = md5( md5(substr($password,0,3)).substr($password,3));
         $this->email = $email;
         if (count($this->findAllByAttributes(array('email'=>$this->email,)))>0)
@@ -72,11 +72,10 @@ class User extends CActiveRecord
         }
         $this->created_date = time();
         $this->active = 0;
-        //$this->generateConfirmKey();
+        $this->generateConfirmKey();
         if($this->save())
         {
-            //$this->sendConfirmLetter($this->email);
-            return FALSE;
+            $this->sendConfirmLetter($this->email);
         }
     }
     
@@ -108,7 +107,7 @@ class User extends CActiveRecord
         $email->subject = 'Hello';
         $email->from = Yii::app()->params['adminEmail'];
         $email->view = 'confirm';
-        $email->viewVars = array('username'=>$this->username, 'confirm_key'=>$this->confirm_key, 'id'=>$this->id);
+        $email->viewVars = array('confirm_key'=>$this->confirm_key, 'id'=>$this->id);
         $email->send();
     }
     
@@ -121,18 +120,18 @@ class User extends CActiveRecord
         {
             if (count($this->findAllByAttributes(array('id'=>$params['id'],'is_active'=>1)))>0)
             {
-                return 1;
+                return self::ACTIVATION_ERROR;
             }
-            $user = $this->findByAttributes(array('id'=>$params['id']));
+            $user = $this->findByPk($params['id']);
             if ( $user->confirm_key == $params['key'])
             {
                 $user->is_active = 1;
-                $user->save($runValidation=TRUE);
-                return 2;
+                $user->save();
+                return self::ACTIVATION_SUCCESS;
             }
             else 
             {
-                return 3;
+                return self::ACTIVATION_ERROR;
             }
         }
     }

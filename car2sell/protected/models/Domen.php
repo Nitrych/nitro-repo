@@ -55,4 +55,15 @@ class Domen extends CActiveRecord
 		return $cities;
 	}
 
+	public function getArrayOfCities()
+	{
+		$q = $this->findAllByAttributes(array(), array('order'=>'id'));
+		$city_array = array();
+		foreach($q as $item)
+		{
+			$city_array[$item->id] = $item->city;
+		}
+		return $city_array;
+	}
+
 }

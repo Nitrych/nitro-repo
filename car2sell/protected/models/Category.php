@@ -43,5 +43,16 @@ class Category extends CActiveRecord
     {
         return $this->findAllByAttributes(array(), array('order'=>'id'));
     }
+
+	public function getArrayOfCategory()
+	{
+		$q = $this->findAllByAttributes(array(), array('order'=>'id'));
+		$category_array = array();
+		foreach($q as $item)
+		{
+			$category_array[$item->id] = $item->name;
+		}
+		return $category_array;
+	}
    
 }

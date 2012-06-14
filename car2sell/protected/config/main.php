@@ -12,10 +12,11 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 
-	// autoloading model and component classes
+	// autoloading model, helpers and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.helpers.*',
 	),
 
 	'modules'=>array(
@@ -84,6 +85,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-		'baseServerName'=>'.auto-board.com',
+		'baseServerName'=>'.car2sell.loc',
 	),
 );

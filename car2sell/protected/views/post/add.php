@@ -29,29 +29,101 @@ $this->breadcrumbs=array(
 
 	<div class="gray_line"></div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'title', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<?php echo $form->labelEx($model, 'title', array('class'=>'bold color_0 f_left ta_right')); ?>
 		<span class="relative in_bl">
-			<?php echo $form->textField($model,'title', array('class'=>'wt_gr br_4')); ?>
-			<?php echo $form->error($model,'title', array('text'=>'<span>a</span>')); ?>
+			<?php echo $form->textField($model, 'title', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'title', array('text'=>'<span>a</span>')); ?>
 		</span>
 	</div>
         
     <div class="row">
-		<?php echo $form->labelEx($model,'category', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<?php echo $form->labelEx($model, 'category', array('class'=>'bold color_0 f_left ta_right')); ?>
 		<span class="relative in_bl">
 			<?php echo $form->hiddenField($model,'category'); ?>
 			<span id="chosen_category_text" class="bold mrgin_righ_15"></span>
 	        <a id="choose_category_button" class="fancybox fancybox.ajax button small E5 fs_11 br_3 mrgin_top_5" href="/ajax/category/"><span class="normal">Выбрать</span></a>
-			<?php echo $form->error($model,'category'); ?>
+			<?php echo $form->error($model, 'category'); ?>
 		</span>
 	</div>
     
 	<div class="gray_line"></div>
     <div class="row">
-        <?php echo $form->labelEx($model,'buy_sell', array('class'=>'bold color_0 f_left ta_right')); ?>
+        <?php echo $form->labelEx($model, 'buy_sell', array('class'=>'bold color_0 f_left ta_right')); ?>
 		<span class="relative in_bl">
         	<?php echo $form->dropdownlist($model,'buy_sell', array(0=>'Выбрать', Post::SELL_TYPE=>'Предлагаю', Post::BUY_TYPE=>'Ищу'), array('class'=>'wt_gr br_4')); ?>
-        	<?php echo $form->error($model,'buy_sell'); ?>
+        	<?php echo $form->error($model, 'buy_sell'); ?>
+		</span>
+    </div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'price', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'price', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'price', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'auction', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->checkBox($model, 'auction'); ?>
+			<?php echo $form->error($model, 'auction'); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'model', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'model', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'model', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'year', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'year', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'year', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'color', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'color', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'color', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'mileage', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'mileage', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'mileage', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model, 'engine_value', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+			<?php echo $form->textField($model, 'engine_value', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model, 'engine_value', array('text'=>'<span>a</span>')); ?>
+		</span>
+	</div>
+
+	<div class="row">
+        <?php echo $form->labelEx($model,'fuel', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+	        <?php echo $form->dropdownlist($model, 'fuel', array(0=>'Выбрать', Post::FUEL_GAS=>'Бензин', Post::FUEL_DIESEL=>'Дизель', Post::FUEL_OTHER=>'Другой'), array('class'=>'wt_gr br_4')); ?>
+	        <?php echo $form->error($model,'fuel'); ?>
+		</span>
+    </div>
+	
+	<div class="row">
+        <?php echo $form->labelEx($model,'gear', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<span class="relative in_bl">
+	        <?php echo $form->dropdownlist($model, 'gear', array(0=>'Выбрать', Post::GEAR_AUTO=>'Автоматическая', Post::GEAR_MANUAL=>'Ручная', Post::GEAR_OTHER=>'Другая'), array('class'=>'wt_gr br_4')); ?>
+	        <?php echo $form->error($model,'gear'); ?>
 		</span>
     </div>
     
@@ -171,7 +243,9 @@ $this->breadcrumbs=array(
 	<?php endif;*/ ?>
 	<div class="gray_line"></div>
 	<div class="row buttons ta_right">
-		<span class="br_3 button"><?php echo CHtml::submitButton('Опубликовать', array('class'=>'color_F pding_0_15', 'style'=>'padding-bottom:3px;')); ?></span>
+		<span class="br_3 button">
+			<?php echo CHtml::submitButton('Опубликовать', array('class'=>'color_F pding_0_15', 'style'=>'padding-bottom:3px;')); ?>
+		</span>
 	</div>
 
 <?php $this->endWidget(); ?>

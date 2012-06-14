@@ -1,8 +1,8 @@
-<div id="content" >
 
+<div id="content" >
 	<div class="mrgin_top_20 mrgin_bot_5">
 		<h1 class="lh_28 bold fs_21"><?php echo $post->title; ?></h1>
-		<p class="fs_11 color_62"><b>Ростов-на-Дону</b> Добавлено: 12:49, 06 май 2012, номер: 72077055</p>
+		<p class="fs_11 color_62"><b><?php echo $domen->city; ?></b> Добавлено: <?php echo Helper::timeToString($post->time); ?>, номер: <?php echo $post->id; ?></p>
 	</div>
 
 	<div>
@@ -15,29 +15,29 @@
 			<tbody>
 				<tr>
 					<td width="33%" class="bd_righ_das_c8">
-						<div class="pding_5_10"> Модель: <strong class="block"> Фиеста спорт </div>
+						<div class="pding_5_10"> Модель: <strong class="block mrgin_top_5"> <?php echo $post->model; ?> </strong></div>
 					</td>
 					<td width="33%" class="bd_righ_das_c8">
-						<div class="pding_5_10"> Год выпуска: <strong class="block"> 2 008 </strong></div>
+						<div class="pding_5_10"> Год выпуска: <strong class="block mrgin_top_5"> <?php echo $post->year; ?> </strong></div>
 					</td>
 					<td width="33%">
-						<div class="pding_5_10"> Цвет: <strong class="block"> синий </strong></div>
+						<div class="pding_5_10"> Цвет: <strong class="block mrgin_top_5"> <?php echo $post->color; ?> </strong></div>
 					</td>
 				</tr>
 				<tr>
 					<td width="33%" class="bd_das_c8" style="border-left:none;">
-						<div class="pding_5_10"> Пробег: <strong class="block"> 45 000 </strong></div>
+						<div class="pding_5_10"> Пробег: <strong class="block mrgin_top_5"> <?php echo Helper::numberToString($post->mileage); ?> км</strong></div>
 					</td>
 					<td width="33%" class="bd_das_c8" style="border-left:none;">
-						<div class="pding_5_10"> Объем двигателя: <strong class="block"> 1 600 см<sup>3</sup> </strong></div>
+						<div class="pding_5_10"> Объем двигателя: <strong class="block mrgin_top_5"> <?php echo Helper::numberToString($post->engine_value); ?> см<sup>3</sup> </strong></div>
 					</td>
 					<td width="33%" class="bd_das_c8" style="border-right:none;border-left:none;">
-						<div class="pding_5_10"> Вид топлива: <strong class="block"> <a class="clicker {clickerID:'ad_params'} clickerMetaad_params" title="Бензин" href="#">Бензин</a> </strong></div>
+						<div class="pding_5_10"> Вид топлива: <strong class="block mrgin_top_5"><?php echo Helper::getFuelLink($post->fuel); ?></strong></div>
 					</td>
 				</tr>
 				<tr>
 					<td width="33%" class="bd_righ_das_c8">
-						<div class="pding5_10"> Коробка передач: <strong class="block"> <a class="clicker {clickerID:'ad_params'} clickerMetaad_params" title="Механическая" href="#">Механическая</a> </strong></div>
+						<div class="pding5_10"> Коробка передач: <strong class="block mrgin_top_5"><?php echo Helper::getGearLink($post->gear); ?></strong></div>
 					</td>
 					<td width="33%" class="bd_righ_das_c8">&nbsp;</td>
 					<td width="33%"></td>
@@ -52,20 +52,22 @@
 					<p><img src="<?php echo $foto->path; ?>" /></p><br />
 				<?php endforeach; ?>
 			<?php endif; ?>
-			<p>Просмотры: <strong>81</strong> </p>
+			<p>Просмотры: <strong><?php echo $post->view; ?></strong> </p>
 		</div>
 
 		<div class="relative f_left post_right">
 			<div class="post_price ta_center br_5">
-				<strong class="fs_lh_22_24 block">480 000 руб.</strong>
-				<small class="block lh_15">Торг возможен</small>
+				<strong class="fs_lh_22_24 block"><?php echo Helper::numberToString($post->price); ?> руб.</strong>
+				<?php if($post->auction == 1): ?>
+					<small class="block lh_15">Торг возможен</small>
+				<?php endif; ?>
 			</div>
 			<div class="contact_info">
 				<div class="mrgin_bot_10 mrgin_top_10 pding_5_0 ">
 					<div class="f_left user_icon  mrgin_righ_15">
 					</div>
 					<p class="color_0 fs_lh_16 over_h">
-						Артем<span class="block"><a class="fs_11" href="#"><span>Все объявления автора</span></a></span>
+						<?php echo $post->contact_name; ?><span class="block"><a class="fs_11" href="#"><span>Все объявления автора</span></a></span>
 					</p>
 				</div>
 				<div class="clear"></div>

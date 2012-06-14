@@ -1625,3 +1625,218 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/06/12 12:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/12 12:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/12 12:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/12 12:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/12 12:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addNew".' in /var/www/car2sell/nitro-repo/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CController.php(271): CController->missingAction('addNew')
+#1 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): CController->run('addNew')
+#2 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('post/addNew')
+#3 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/post/addNew
+---
+2012/06/12 14:01:55 [error] [php] include(auction.php): failed to open stream: No such file or directory (/var/www/car2sell/nitro-repo/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/validators/CValidator.php(171): import()
+#1 /var/www/car2sell/nitro-repo/framework/base/CModel.php(285): createValidator()
+#2 /var/www/car2sell/nitro-repo/framework/base/CModel.php(259): PostForm->createValidators()
+#3 /var/www/car2sell/nitro-repo/framework/base/CModel.php(302): PostForm->getValidators()
+#4 /var/www/car2sell/nitro-repo/framework/web/helpers/CHtml.php(1185): PostForm->isAttributeRequired()
+#5 /var/www/car2sell/nitro-repo/framework/web/widgets/CActiveForm.php(560): activeLabelEx()
+#6 /var/www/car2sell/nitro-repo/car2sell/protected/views/post/add.php(32): CActiveForm->labelEx()
+#7 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(127): require()
+#8 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(96): PostController->renderInternal()
+#9 /var/www/car2sell/nitro-repo/framework/web/CController.php(870): PostController->renderFile()
+#10 /var/www/car2sell/nitro-repo/framework/web/CController.php(783): PostController->renderPartial()
+#11 /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php(109): PostController->render()
+#12 /var/www/car2sell/nitro-repo/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#13 /var/www/car2sell/nitro-repo/framework/web/CController.php(309): CInlineAction->runWithParams()
+#14 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#15 /var/www/car2sell/nitro-repo/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#17 /var/www/car2sell/nitro-repo/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/car2sell/nitro-repo/framework/web/CController.php(266): PostController->runActionWithFilters()
+#19 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): PostController->run()
+#20 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/car2sell/nitro-repo/car2sell/protected/views/post/add.php (32)
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (109)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:02:07 [error] [php] include(auction.php): failed to open stream: No such file or directory (/var/www/car2sell/nitro-repo/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/validators/CValidator.php(171): import()
+#1 /var/www/car2sell/nitro-repo/framework/base/CModel.php(285): createValidator()
+#2 /var/www/car2sell/nitro-repo/framework/base/CModel.php(259): PostForm->createValidators()
+#3 /var/www/car2sell/nitro-repo/framework/base/CModel.php(302): PostForm->getValidators()
+#4 /var/www/car2sell/nitro-repo/framework/web/helpers/CHtml.php(1185): PostForm->isAttributeRequired()
+#5 /var/www/car2sell/nitro-repo/framework/web/widgets/CActiveForm.php(560): activeLabelEx()
+#6 /var/www/car2sell/nitro-repo/car2sell/protected/views/post/add.php(32): CActiveForm->labelEx()
+#7 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(127): require()
+#8 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(96): PostController->renderInternal()
+#9 /var/www/car2sell/nitro-repo/framework/web/CController.php(870): PostController->renderFile()
+#10 /var/www/car2sell/nitro-repo/framework/web/CController.php(783): PostController->renderPartial()
+#11 /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php(109): PostController->render()
+#12 /var/www/car2sell/nitro-repo/framework/web/actions/CInlineAction.php(50): PostController->actionAddNewPost()
+#13 /var/www/car2sell/nitro-repo/framework/web/CController.php(309): CInlineAction->runWithParams()
+#14 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#15 /var/www/car2sell/nitro-repo/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#17 /var/www/car2sell/nitro-repo/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/car2sell/nitro-repo/framework/web/CController.php(266): PostController->runActionWithFilters()
+#19 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): PostController->run()
+#20 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/addNewPost/
+in /var/www/car2sell/nitro-repo/car2sell/protected/views/post/add.php (32)
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (109)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "model" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "color" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "mileage" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "near_adress" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "phone_number" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "icq" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:07:52 [warning] [application] Failed to set unsafe attribute "skype" of "PostForm".
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (73)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 14:21:50 [error] [exception.CException] exception 'CException' with message 'Property "Post.categoty" is not defined.' in /var/www/car2sell/nitro-repo/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/db/ar/CActiveRecord.php(144): CComponent->__get('categoty')
+#1 /var/www/car2sell/nitro-repo/car2sell/protected/views/post/index.php(14): CActiveRecord->__get('categoty')
+#2 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(127): require('/var/www/car2se...')
+#3 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/car2se...', Array, true)
+#4 /var/www/car2sell/nitro-repo/framework/web/CController.php(870): CBaseController->renderFile('/var/www/car2se...', Array, true)
+#5 /var/www/car2sell/nitro-repo/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php(47): CController->render('index', Array)
+#7 /var/www/car2sell/nitro-repo/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#8 /var/www/car2sell/nitro-repo/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /var/www/car2sell/nitro-repo/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 /var/www/car2sell/nitro-repo/framework/web/CController.php(292): CFilterChain->run()
+#13 /var/www/car2sell/nitro-repo/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('post')
+#16 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/post/
+---
+2012/06/12 16:17:32 [error] [php] include(StringHelper.php): failed to open stream: No such file or directory (/var/www/car2sell/nitro-repo/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/car2sell/protected/views/post/show.php(29): spl_autoload_call()
+#1 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(127): require()
+#2 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /var/www/car2sell/nitro-repo/framework/web/CController.php(870): PostController->renderFile()
+#4 /var/www/car2sell/nitro-repo/framework/web/CController.php(783): PostController->renderPartial()
+#5 /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php(122): PostController->render()
+#6 /var/www/car2sell/nitro-repo/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#7 /var/www/car2sell/nitro-repo/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /var/www/car2sell/nitro-repo/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#11 /var/www/car2sell/nitro-repo/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/car2sell/nitro-repo/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): PostController->run()
+#14 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/show/id/52
+in /var/www/car2sell/nitro-repo/car2sell/protected/views/post/show.php (29)
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (122)
+in /var/www/car2sell/nitro-repo/car2sell/index.php (13)
+2012/06/12 16:27:23 [error] [php] implode(): Invalid arguments passed (/var/www/car2sell/nitro-repo/car2sell/protected/helpers/StringHelper.php:13)
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(127): require()
+#1 /var/www/car2sell/nitro-repo/framework/web/CBaseController.php(96): PostController->renderInternal()
+#2 /var/www/car2sell/nitro-repo/framework/web/CController.php(870): PostController->renderFile()
+#3 /var/www/car2sell/nitro-repo/framework/web/CController.php(783): PostController->renderPartial()
+#4 /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php(122): PostController->render()
+#5 /var/www/car2sell/nitro-repo/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#6 /var/www/car2sell/nitro-repo/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#8 /var/www/car2sell/nitro-repo/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /var/www/car2sell/nitro-repo/framework/web/filters/CFilterChain.php(131): DomenFilter->filter()
+#10 /var/www/car2sell/nitro-repo/framework/web/CController.php(292): CFilterChain->run()
+#11 /var/www/car2sell/nitro-repo/framework/web/CController.php(266): PostController->runActionWithFilters()
+#12 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(276): PostController->run()
+#13 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CWebApplication->run()
+REQUEST_URI=/post/show/id/52
+in /var/www/car2sell/nitro-repo/car2sell/protected/helpers/StringHelper.php (13)
+in /var/www/car2sell/nitro-repo/car2sell/protected/views/post/show.php (29)
+in /var/www/car2sell/nitro-repo/car2sell/protected/controllers/PostController.php (122)
+2012/06/12 17:29:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/post-default.png".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('images/post-def...')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/post-default.png
+HTTP_REFERER=http://www.car2sell.loc/post/
+---
+2012/06/12 17:29:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/post-default.png".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('images/post-def...')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/post-default.png
+HTTP_REFERER=http://www.car2sell.loc/post/
+---
+2012/06/12 17:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/post-default.png".' in /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/car2sell/nitro-repo/framework/web/CWebApplication.php(135): CWebApplication->runController('images/post-def...')
+#1 /var/www/car2sell/nitro-repo/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/car2sell/nitro-repo/car2sell/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/post-default.png
+---
