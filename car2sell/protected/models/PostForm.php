@@ -41,7 +41,7 @@ class PostForm extends CFormModel
 	public function rules()
 	{
 		$return = array(
-			array('title, text, contact_name, email, category, city, region, price, fuel, gear, year, engine_value, owner_type', 'required', 'message'=>'Ето поле не может быть пустым'),
+			array('title, text, contact_name, email, category, city, region, price, fuel, gear, year, engine_value, owner_type', 'required', 'message'=>'Это поле не может быть пустым'),
 			array('phone_number, model, icq, skype, near_adress, color', 'length', 'min'=>'2', 'allowEmpty'=>TRUE, 'tooShort'=>'Не менее 2 символов'),
         	array('email', 'email', 'message'=>'Email-адрес не похож на настоящий'),
 			array('title', 'length', 'min'=>'2', 'tooShort'=>'Длина названия не менее 2 символов'),
@@ -49,8 +49,8 @@ class PostForm extends CFormModel
 			array('category', 'exist', 'attributeName' => 'id', 'className' => 'Category'),
 			array('buy_sell', 'in', 'range'=>array(Post::BUY_TYPE, Post::SELL_TYPE), 'message'=>'Пожалуйста, укажите, вы предлагаете товар или услугу или ищете?'),
 			array('auction', 'boolean'),
-			array('fuel', 'in', 'range'=>array(Post::FUEL_GAS, Post::FUEL_DIESEL, Post::FUEL_OTHER), 'message'=>'Ето поле не может быть пустым'),
-			array('gear', 'in', 'range'=>array(Post::GEAR_AUTO, Post::GEAR_MANUAL, Post::GEAR_OTHER), 'message'=>'Ето поле не может быть пустым'),
+			array('fuel', 'in', 'range'=>array(Post::FUEL_GAS, Post::FUEL_DIESEL, Post::FUEL_OTHER), 'message'=>'Это поле не может быть пустым'),
+			array('gear', 'in', 'range'=>array(Post::GEAR_AUTO, Post::GEAR_MANUAL, Post::GEAR_OTHER), 'message'=>'Это поле не может быть пустым'),
 			array('owner_type', 'in', 'range'=>array(Post::USER_OWNER_TYPE, Post::COMPANY_OWNER_TYPE), 'message'=>'Пожалуйста, укажите, это объявление от частного лица или от компании?'),
 			array('rule_agreement', 'required', 'requiredValue'=>1, 'message'=>'Поле обязательно для заполнения' ),
 			//array('city', 'in', 'range'=>array(1,2,3), 'message'=>'Пожалуйста, укажите регион и город'),
@@ -77,7 +77,7 @@ class PostForm extends CFormModel
 			'title'=>'Заголовок',
                         'text'=>'Текст обьявления',
                         'category'=>'Категория',
-                        'buy_sell'=>'Предлагаете / Ищете?',
+                        'buy_sell'=>'Продаете/ Покупаете?',
 						'owner_type'=>'Частное лицо / Компания',
                         'contact_name'=>'Контактное лицо',
                         'phone_number'=>'Номер телефона',

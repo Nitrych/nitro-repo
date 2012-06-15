@@ -53,10 +53,10 @@ return array(
 		),*/
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=auto-board',
+			'connectionString' => 'mysql:host=localhost;dbname=car2sell',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'fox-98Z',
+			'password' => 'b0$$7nitr0',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
@@ -84,7 +84,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-		'baseServerName'=>'.car2sell.loc',
+		'adminEmail'=>'admin@car2sell.ru',
+		'baseServerName'=>'.car2sell.ru',
 	),
 );
