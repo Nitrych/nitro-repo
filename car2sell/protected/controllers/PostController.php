@@ -38,14 +38,14 @@ class PostController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-                if (Yii::app()->user->getIsGuest())
-                {
-                    //exit;
-                }
-                $posts = Post::model()->getHomePagePost();
-				$categories = Category::model()->getArrayOfCategory();
-				$cities = Domen::model()->getArrayOfCities();
-                $this->render('index', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
+        if (Yii::app()->user->getIsGuest())
+        {
+        	//exit;
+        }
+        $posts = Post::model()->getHomePagePost();
+		$categories = Category::model()->getArrayOfCategory();
+		$cities = Domen::model()->getArrayOfCities();
+    	$this->render('index', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
 	}
 
 	/**
@@ -104,11 +104,18 @@ class PostController extends Controller
 						$j++;
 					}
 				}
-                if($result) $this->redirect('/post/');
+                if($result)
+                {
+                    $this->redirect('/post/');
+                }
 			}
 		}
 		//echo '<pre>';
 		//print_r($dropdown);exit;
+        if(Yii::app()->user->id)
+        {
+            $model = $model->setCreatorInfo();
+        }
 		$this->render('add',array('model'=>$model, 'dropdown'=>$dropdown));
 	}
 
@@ -121,6 +128,28 @@ class PostController extends Controller
 		$domen = Domen::model()->findByPk($post->domen);
 		$fotos = PostFoto::model()->getAllForPost($post->id);
 		$this->render('show',array('post'=>$post, 'fotos'=>$fotos, 'category'=>$category, 'domen'=>$domen));
+	}
+
+	/**
+	 * This is the user action that is invoked
+	 * 
+	 */
+	public function actionUser()
+	{
+        if (Yii::app()->user->getIsGuest())
+        {
+        	//exit;
+        }
+		$user = User::model()->findByPk(Yii::app()->user->id);
+		if($user==NULL)
+		{
+			//TODO redirect to 404
+			return;
+		}
+        $posts = Post::model()->getUsersPost($user->id);
+		$categories = Category::model()->getArrayOfCategory();
+		$cities = Domen::model()->getArrayOfCities();
+    	$this->render('user', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
 	}
 
 }

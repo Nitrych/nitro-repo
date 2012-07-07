@@ -1,4 +1,5 @@
 <div id="content">
+    <?php if(!$is_saved): ?>
 	<div id="padding_box">
 		<h2 class="bold fs_lh_14_18 color_62 mrgin_10_0">Регистрация и изменение пароля</h2>
 		<div class="registraion-form br_4 bd_e3">
@@ -66,4 +67,9 @@
 
 		</div><!-- registraion-form -->
 	</div><!-- padding_box -->
+    <?php else: ?>
+        <div class="mrgin_top_30">
+            Ваш акаунт был успешно создан. Откройте свой почтовый ящик, котрый вы указали при регистрации и активируйте свою учетную запись.
+        </div>
+    <?php endif;?>
 </div><!-- content -->

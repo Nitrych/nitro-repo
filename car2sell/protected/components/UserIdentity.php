@@ -20,7 +20,7 @@ class UserIdentity extends CUserIdentity
 
 	public function authenticate()
     {
-	    $record=User::model()->findByAttributes(array('email'=>$this->email, 'active'=>1));
+	    $record=User::model()->findByAttributes(array('email'=>$this->email, 'is_active'=>1));
         if($record===null)
 	        $this->errorCode=self::ERROR_USERNAME_INVALID;
         else if($record->password!==md5( md5(substr($this->password,0,3)).substr($this->password,3)) )

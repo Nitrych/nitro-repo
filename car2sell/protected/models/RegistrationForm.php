@@ -28,7 +28,7 @@ class RegistrationForm extends CFormModel
             // email is email
 			array('email', 'email','message'=>'Неверный формат електронного адреса'),
             // email is unique
-			array('email', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'email', 'message'=>'Данный електронный адресс уже используется'),
+			array('email', 'unique', 'className'=>'User', 'caseSensitive'=>FALSE, 'attributeName'=>'email', 'message'=>'Данный електронный адресс уже используется'),
             // email is unique
 			array('username', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'username', 'message'=>'Данный псевдоним уже используется'),
             // password and re_password are equal

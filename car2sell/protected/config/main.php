@@ -56,7 +56,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=car2sell',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'b0$$7nitr0',
+			'password' => '!l2i#n4u',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
@@ -78,6 +78,11 @@ return array(
 				*/
 			),
 		),
+		'email'=>array(
+        	'class'=>'application.extensions.email.Email',
+        	'delivery'=>'php', //Will use the php mailing function.  
+        	//May also be set to 'debug' to instead dump the contents of the email into the view
+        ),
 	),
 
 	// application-level parameters that can be accessed
@@ -85,6 +90,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'admin@car2sell.ru',
-		'baseServerName'=>'.car2sell.ru',
+		'baseServerName'=>'.car2sell.loc',
 	),
 );

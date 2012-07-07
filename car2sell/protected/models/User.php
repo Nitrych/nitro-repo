@@ -13,7 +13,7 @@ class User extends CActiveRecord
      */
     public function tableName()
     {
-	return 'user';
+        return 'user';
     }
     
     /**
@@ -21,13 +21,16 @@ class User extends CActiveRecord
      */
     public function rules()
     {
-	// NOTE: you should only define rules for those attributes that
-	// will receive user inputs.
-	return array(
-		array('password, email', 'required'),
-        array('email', 'email'),
-		array('username, password, email', 'length', 'max'=>128),
-    	);
+        // NOTE: you should only define rules for those attributes that
+        // will receive user inputs.
+        return array(
+            //array('password, email', 'required'),
+            array('email', 'email'),
+            array('email', 'unique', 'className'=>'User', 'caseSensitive'=>FALSE, 'attributeName'=>'email', 'message'=>'Данный електронный адресс уже используется'),
+            array('username', 'unique', 'className'=>'User', 'caseSensitive'=>TRUE, 'attributeName'=>'username', 'message'=>'Данный псевдоним уже используется'),
+            //array('username, password, email', 'length', 'max'=>128),
+            array('domen', 'exist', 'allowEmpty'=>TRUE, 'attributeName' => 'id', 'className' => 'Domen'),
+        );
     }
     
     /**
@@ -71,31 +74,20 @@ class User extends CActiveRecord
             return 'user_exist';
         }
         $this->created_date = time();
-        $this->active = 0;
+        $this->is_active = 0;
+		$this->domen = NULL;
         $this->generateConfirmKey();
         if($this->save())
         {
             $this->sendConfirmLetter($this->email);
+			return TRUE;
         }
+		else
+		{
+			return FALSE;
+		}
     }
-    
-    /**
-     * @return array of new user info if he was created
-     */
-    public function getNewUserInfo()
-    {
-        if ($this->id != NULL)
-        {
-            return array(
-                    'username'=>$this->username,
-                    'email'=>$this->email,
-                );
-        }
-        else
-        {
-            return FALSE;
-        }
-    }
+
     
     /**
      * @send registration letter to comfirm account
@@ -107,7 +99,7 @@ class User extends CActiveRecord
         $email->subject = 'Hello';
         $email->from = Yii::app()->params['adminEmail'];
         $email->view = 'confirm';
-        $email->viewVars = array('confirm_key'=>$this->confirm_key, 'id'=>$this->id);
+        $email->viewVars = array('confirm_key'=>$this->confirm_key, 'id'=>$this->id, 'baseUrl'=>Yii::app()->params['baseServerName'], );
         $email->send();
     }
     
@@ -123,7 +115,7 @@ class User extends CActiveRecord
                 return self::ACTIVATION_ERROR;
             }
             $user = $this->findByPk($params['id']);
-            if ( $user->confirm_key == $params['key'])
+            if ($user->confirm_key == $params['key'])
             {
                 $user->is_active = 1;
                 $user->save();
@@ -136,5 +128,37 @@ class User extends CActiveRecord
         }
     }
 
+    public function saveSettings(SettingsForm $form)
+    {
+        if($this->domen==0)
+        {
+            $this->domen = NULL;
+        }       
+        if($form->city!='not')
+        {
+            $this->domen = (int)$form->city;
+        }
+		$attr_array = array('skype', 'icq',	'phone_number', 'username', 'email',);
+		foreach($form->attributes as $k => $value)
+		{
+			if(!in_array($k, $attr_array) || $k==NULL || $k=='')
+            {
+                continue;
+            }
+			$this->$k = $form->$k;
+		}
+        if($form->password!='' && $form->password!=NULL && $form->password==$form->re_password)
+        {
+            $this->password = md5( md5(substr($form->password,0,3)).substr($form->password,3));
+        }
+        if ($this->save())
+        {
+            return $this->id;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
 
 }

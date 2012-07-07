@@ -22,7 +22,7 @@ class PostForm extends CFormModel
 	public $gear;
     public $owner_type;
     public $img_1; public $img_2; public $img_3; public $img_4; public $img_5; public $img_6; public $img_7; public $img_8;
-    public $contact_name;
+    public $username;
     public $email;
     public $phone_number;
     public $icq;
@@ -41,7 +41,7 @@ class PostForm extends CFormModel
 	public function rules()
 	{
 		$return = array(
-			array('title, text, contact_name, email, category, city, region, price, fuel, gear, year, engine_value, owner_type', 'required', 'message'=>'Это поле не может быть пустым'),
+			array('title, text, username, email, category, city, region, price, fuel, gear, year, engine_value, owner_type', 'required', 'message'=>'Это поле не может быть пустым'),
 			array('phone_number, model, icq, skype, near_adress, color', 'length', 'min'=>'2', 'allowEmpty'=>TRUE, 'tooShort'=>'Не менее 2 символов'),
         	array('email', 'email', 'message'=>'Email-адрес не похож на настоящий'),
 			array('title', 'length', 'min'=>'2', 'tooShort'=>'Длина названия не менее 2 символов'),
@@ -79,7 +79,7 @@ class PostForm extends CFormModel
                         'category'=>'Категория',
                         'buy_sell'=>'Продаете/ Покупаете?',
 						'owner_type'=>'Частное лицо / Компания',
-                        'contact_name'=>'Контактное лицо',
+                        'username'=>'Контактное лицо',
                         'phone_number'=>'Номер телефона',
                         'icq'=>'ICQ',
                         'skype'=>'Skype',
@@ -100,4 +100,22 @@ class PostForm extends CFormModel
 						'fuel'=>'Вид топлива',
 		);
 	}
+
+    public function setCreatorInfo()
+    {
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        if($user==NULL)
+        {
+            return $this;
+        }
+        $attrs = array('username', 'email', 'icq', 'phone_number', 'skype');
+        foreach($attrs as $attr)
+        {
+            $this->$attr = $user->$attr;
+        }
+        
+        return $this;
+    }
+
+
 }

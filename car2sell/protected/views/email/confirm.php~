@@ -1,0 +1,7 @@
+Email:<?php echo $email->subject ?>
+<br />
+From:<?php echo $email->from ?>
+<br />
+Username:<?php echo $username ?>
+<br />
+Key:<a href="http://www.auto-board/account/activate/id/<?php echo $id ?>/key/<?php echo $confirm_key ?>" >Confirm</a>

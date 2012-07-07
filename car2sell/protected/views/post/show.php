@@ -7,9 +7,11 @@
 
 	<div>
 		<div class="post_body mrgin_top_10 f_left">
-			<div class="foto_slider mrgin_bot_10">
-				<div id="foto_1"><img src="<?php echo $fotos[0]['path']; ?>" /></div>
-			</div>
+            <?php if(isset($fotos[0]['path'])): ?>
+                <div class="foto_slider mrgin_bot_10">
+                    <div id="foto_1"><img src="<?php echo $fotos[0]['path']; ?>" /></div>
+                </div>
+            <?php endif; ?>
 
 			<table width="100%" cellspacing="0" cellpadding="0" class="details fixed mrgin_bot_10 mrgin_top_5">
 			<tbody>
@@ -67,15 +69,35 @@
 					<div class="f_left user_icon  mrgin_righ_15">
 					</div>
 					<p class="color_0 fs_lh_16 over_h">
-						<?php echo $post->contact_name; ?><span class="block"><a class="fs_11" href="#"><span>Все объявления автора</span></a></span>
+						<?php echo $post->username; ?>
+                        <?php if($post->creator_id>0): ?>
+                            <span class="block">
+                                <a class="fs_11" href="/post/user/id/<?php echo $post->creator_id; ?>"><span>Все объявления автора</span></a>
+                            </span>
+                        <?php endif; ?>
 					</p>
 				</div>
 				<div class="clear"></div>
 				<ul id="contact_methods">
-					<li class="mrgin_10_0">
-						<!--TODO <span class="phone_icon">&nbsp;</span>-->
-						Тел.: <strong>89XXXXX</strong><a class="" href="#"><span>«&nbsp;Показать</span></a>
-					</li>
+                    <?php if($post->phone_number!=''): ?>
+                        <li class="mrgin_10_0">
+                            <!--TODO <span class="phone_icon">&nbsp;</span>-->
+                            Тел.: <strong><?php echo substr($post->phone_number, 0, 2);?>XXXXX</strong>
+                            <a class="" href="#"><span>«&nbsp;Показать</span></a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if($post->icq!=''): ?>
+                        <li class="mrgin_10_0">
+                            <!--TODO <span class="phone_icon">&nbsp;</span>-->
+                            ICQ: <strong><?php echo $post->icq;?></strong>
+                        </li>
+                    <?php endif; ?>
+                    <?php if($post->skype!=''): ?>
+                        <li class="mrgin_10_0">
+                            <!--TODO <span class="phone_icon">&nbsp;</span>-->
+                            Skype: <strong><?php echo $post->skype;?></strong>
+                        </li>
+                    <?php endif; ?>
 				</ul>
 			</div>
 			<div class="location_info ta_center">

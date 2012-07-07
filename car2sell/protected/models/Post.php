@@ -27,7 +27,7 @@ class Post extends CActiveRecord
 	// NOTE: you should only define rules for those attributes that
 	// will receive user inputs.
 	return array(
-		array('title, text, email, category, contact_name', 'required'),
+		array('title, text, email, category, username', 'required'),
 		array('buy_sell', 'in', 'range'=>array(self::BUY_TYPE, self::SELL_TYPE), ),
 		array('owner_type', 'in', 'range'=>array(self::USER_OWNER_TYPE, self::COMPANY_OWNER_TYPE), ),
     	);
@@ -46,25 +46,41 @@ class Post extends CActiveRecord
     /**
      * 
      */
-    public function createNew($form)
+    public function createNew(PostForm $form)
     {
         $this->creator_id = ($id=Yii::app()->user->id) ? $id : 0;
         $this->time = time();
 		$this->domen = $form->city;
 		$attr_array = array('title', 'text', 'price', 'auction', 'model', 'year', 'color', 'mileage', 'engine_value', 'fuel', 'gear', 'skype', 'icq',
-							'phone_number', 'contact_name', 'buy_sell', 'owner_type', 'email', 'category');
-		foreach($form->attributes as $k => $field)
+							'phone_number', 'username', 'buy_sell', 'owner_type', 'email', 'category');
+		foreach($form->attributes as $k => $value)
 		{
 			if(!in_array($k, $attr_array)) continue;
 			$this->$k = $form->$k;
 		}
-        if ($this->save())  return $this->id;
-        else return FALSE;
+        if ($this->save())
+        {
+            return $this->id;
+        }
+        else
+        {
+            return FALSE;
+        }
     }
     
     public function getHomePagePost()
     {
         return $this->findAllByAttributes(array(), array('order'=>'id DESC', 'limit'=>20));
+    }
+    
+    public function getUsersPost($user_id=NULL)
+    {
+        if($user_id==NULL)
+        {
+            return FALSE;
+        }
+
+        return $this->findAllByAttributes(array('creator_id'=>(int)$user_id), array('order'=>'id DESC', 'limit'=>20));
     }
 
 	public function increaseView()
@@ -80,6 +96,6 @@ class Post extends CActiveRecord
 		if($q!=NULL) return $q->path;
 		else return '/images/post-default.png';
 	}
-    
-   
+
+
 }

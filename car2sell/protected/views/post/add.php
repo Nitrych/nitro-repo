@@ -1,16 +1,13 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - Добавить новое обьявление';
-$this->breadcrumbs=array(
-	'Contact',
-);
 ?>
 <div id="content" >
 <h1 class="fs_16 bold pding_10">Подать объявление</h1>
 
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
+<?php if(Yii::app()->user->hasFlash('post_add')): ?>
 
 <div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
+	<?php echo Yii::app()->user->getFlash('post_add'); ?>
 </div>
 
 <?php else: ?>
@@ -182,10 +179,10 @@ $this->breadcrumbs=array(
 
 	<div class="gray_line"></div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'contact_name', array('class'=>'bold color_0 f_left ta_right')); ?>
+		<?php echo $form->labelEx($model,'username', array('class'=>'bold color_0 f_left ta_right')); ?>
 		<span class="relative in_bl">
-			<?php echo $form->textField($model,'contact_name', array('class'=>'wt_gr br_4')); ?>
-			<?php echo $form->error($model,'contact_name'); ?>
+			<?php echo $form->textField($model,'username', array('class'=>'wt_gr br_4')); ?>
+			<?php echo $form->error($model,'username'); ?>
 		</span>
 	</div>
 
