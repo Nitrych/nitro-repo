@@ -68,9 +68,21 @@ class Post extends CActiveRecord
         }
     }
     
-    public function getHomePagePost()
+    public function getHomePagePost($filters=FALSE)
     {
-        return $this->findAllByAttributes(array(), array('order'=>'id DESC', 'limit'=>20));
+		if($filters===FALSE)
+		{
+			$attributes = array('buy_sell'=>'sell');
+			$condition = array('order'=>'id DESC', 'limit'=>20);
+		}
+		else
+		{
+			$attr_cond = $this->getSearchAttrCond($filters);
+			$attributes = $attr_cond['attributes'];
+			$condition = $attr_cond['condition'];
+		}
+
+        return $this->findAllByAttributes($attributes, $condition);
     }
     
     public function getUsersPost($user_id=NULL)
@@ -79,8 +91,32 @@ class Post extends CActiveRecord
         {
             return FALSE;
         }
+		$attributes = array(
+						'creator_id'=>(int)$user_id,
+		);
 
-        return $this->findAllByAttributes(array('creator_id'=>(int)$user_id), array('order'=>'id DESC', 'limit'=>20));
+        return $this->findAllByAttributes($attributes, array('order'=>'id DESC', 'limit'=>20));
+    }
+
+	public function getCategorysPost($category_id=NULL, $filters=FALSE)
+    {
+        if($category_id==NULL)
+        {
+            return FALSE;
+        }
+		if($filters===FALSE)
+		{
+			$attributes = array('category'=>(int)$category_id, 'buy_sell'=>'sell');
+			$condition = array('order'=>'id DESC', 'limit'=>20);
+		}
+		else
+		{
+			$attr_cond = $this->getSearchAttrCond($filters);
+			$attributes = $attr_cond['attributes'];
+			$condition = $attr_cond['condition'];
+		}
+
+        return $this->findAllByAttributes($attributes, $condition);
     }
 
 	public function increaseView()
@@ -93,8 +129,64 @@ class Post extends CActiveRecord
 	public function getFirstImgSrc()
 	{
 		$q = PostFoto::model()->findByAttributes( array('post_id'=>$this->id), array('order'=>'id') );
-		if($q!=NULL) return $q->path;
-		else return '/images/post-default.png';
+		if($q!=NULL)
+		{
+			return $q->path;
+		}
+		else
+		{
+			return '/images/post-default.png';
+		}
+	}
+
+	protected function getSearchAttrCond($filters=FALSE)
+	{
+		if($filters==FALSE)
+        {
+            return array('attributes'=>array('buy_sell'=>'sell'), 'condition'=>array('order'=>'id DESC', 'limit'=>20), );
+        }
+		else
+		{
+			$attr_return = array();
+			$cond_return = array('order'=>'id DESC', 'limit'=>20);
+			$attr_array = array('fuel', 'owner_type', 'gear');
+			foreach($attr_array as $attr)
+			{
+				if(isset($filters[$attr]))
+				{
+					$attr_return[$attr] = $filters[$attr];
+				}
+			}
+			if(isset($filters['buy_sell']) && $filters['buy_sell']=='buy')
+			{
+				$attr_return['buy_sell'] = 'buy';
+			}
+			else
+			{
+				$attr_return['buy_sell'] = 'sell';
+			}
+			//var_dump($attr_return);exit;
+			$where = array();
+			$cond_array_f = array('price_f', 'engine_value_f', 'mileage_f', );
+			foreach($cond_array_f as $cond)
+			{
+				if(isset($filters[$cond]))
+				{
+					$where[] = ' '.substr($cond, 0, -2).' >= '.(int)$filters[$cond];
+				}
+			}
+			$cond_array_t = array('price_t', 'engine_value_t', 'mileage_t', );
+			foreach($cond_array_t as $cond)
+			{
+				if(isset($filters[$cond]))
+				{
+					$where[] = ' '.substr($cond, 0, -2).' <= '.(int)$filters[$cond];
+				}
+			}
+			$cond_return['condition'] = implode(' AND ', $where);
+
+			return array('attributes'=>$attr_return, 'condition'=>$cond_return);
+		}
 	}
 
 

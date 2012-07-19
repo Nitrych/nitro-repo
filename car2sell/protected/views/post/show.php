@@ -9,7 +9,9 @@
 		<div class="post_body mrgin_top_10 f_left">
             <?php if(isset($fotos[0]['path'])): ?>
                 <div class="foto_slider mrgin_bot_10">
-                    <div id="foto_1"><img src="<?php echo $fotos[0]['path']; ?>" /></div>
+                    <div id="foto_1">
+						<img src="<?php echo $fotos[0]['path']; ?>" width="609px" height="379px" />
+					</div>
                 </div>
             <?php endif; ?>
 

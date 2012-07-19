@@ -6,7 +6,8 @@ class PostController extends Controller
 	public function filters()   
 	{   
            return array(     
-              array('application.filters.DomenFilter')
+				array('application.filters.DomenFilter'),
+				array('application.filters.SearchQueryFilter + index, category')
            );   
 	}
 
@@ -42,10 +43,24 @@ class PostController extends Controller
         {
         	//exit;
         }
-        $posts = Post::model()->getHomePagePost();
+		if(isset($_GET['q']))
+		{
+			$filters=$_GET['q'];
+		}
+		else
+		{
+			$filters=FALSE;
+		}
+        $posts = Post::model()->getHomePagePost($filters);
 		$categories = Category::model()->getArrayOfCategory();
 		$cities = Domen::model()->getArrayOfCities();
-    	$this->render('index', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
+		//var_dump($categories);exit;
+    	$this->render('index', array(
+								'posts'=>$posts,
+								'categories'=>$categories,
+								'cities'=>$cities,
+								'filters'=>$filters,
+		));
 	}
 
 	/**
@@ -116,7 +131,10 @@ class PostController extends Controller
         {
             $model = $model->setCreatorInfo();
         }
-		$this->render('add',array('model'=>$model, 'dropdown'=>$dropdown));
+		$this->render('add', array(
+								'model'=>$model,
+								'dropdown'=>$dropdown
+		));
 	}
 
 	public function actionShow()
@@ -127,7 +145,12 @@ class PostController extends Controller
 		$category = Category::model()->findByPk($post->category);
 		$domen = Domen::model()->findByPk($post->domen);
 		$fotos = PostFoto::model()->getAllForPost($post->id);
-		$this->render('show',array('post'=>$post, 'fotos'=>$fotos, 'category'=>$category, 'domen'=>$domen));
+		$this->render('show', array(
+								'post'=>$post,
+								'fotos'=>$fotos,
+								'category'=>$category,
+								'domen'=>$domen
+		));
 	}
 
 	/**
@@ -140,7 +163,8 @@ class PostController extends Controller
         {
         	//exit;
         }
-		$user = User::model()->findByPk(Yii::app()->user->id);
+		$id = (int)$_GET['id'];
+		$user = User::model()->findByPk($id);
 		if($user==NULL)
 		{
 			//TODO redirect to 404
@@ -149,7 +173,48 @@ class PostController extends Controller
         $posts = Post::model()->getUsersPost($user->id);
 		$categories = Category::model()->getArrayOfCategory();
 		$cities = Domen::model()->getArrayOfCities();
-    	$this->render('user', array('posts'=>$posts, 'categories'=>$categories, 'cities'=>$cities));
+    	$this->render('user', array(
+								'posts'=>$posts,
+								'categories'=>$categories,
+								'cities'=>$cities
+		));
+	}
+
+	/**
+	 * This is the user action that is invoked
+	 * 
+	 */
+	public function actionCategory()
+	{
+        if (Yii::app()->user->getIsGuest())
+        {
+        	//exit;
+        }
+		$id = (int)$_GET['id'];
+		$category = Category::model()->findByPk($id);
+		if($category==NULL)
+		{
+			//TODO redirect to 404
+			return;
+		}
+		if(isset($_GET['q']))
+		{
+			$filters=$_GET['q'];
+		}
+		else
+		{
+			$filters=FALSE;
+		}
+        $posts = Post::model()->getCategorysPost($category->id);
+		$categories = Category::model()->getArrayOfCategory();
+		$cities = Domen::model()->getArrayOfCities();
+    	$this->render('category', array(
+									'posts'=>$posts,
+									'categories'=>$categories,
+									'cities'=>$cities,
+									'filters'=>$filters,
+									'category'=>$category,
+		));
 	}
 
 }

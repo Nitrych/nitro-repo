@@ -7,10 +7,19 @@ class DomenFilter extends CFilter
 	{
 		$sub_name = str_replace(Yii::app()->params['baseServerName'], '', $_SERVER['SERVER_NAME']);
 		$domain = Domen::model()->findByAttributes(array('name'=>$sub_name,));
-		//var_dump($filterChain->action->id);
-		if($domain!=NULL) Yii::app()->setParams(array('CURRENT_DOMAIN'=>(int)$domain->id));
-		else $filterChain->controller->redirect('http://www'.Yii::app()->params['baseServerName'], TRUE);
-		if (!defined('CURRENT_DOMAIN')) define('CURRENT_DOMAIN', (int)$domain->id);
+		if($domain!=NULL)
+		{
+			Yii::app()->setParams(array('CURRENT_DOMAIN'=>(int)$domain->id));
+		}
+		else
+		{
+			$filterChain->controller->redirect('http://www'.Yii::app()->params['baseServerName'], TRUE);
+		}
+		if (!defined('CURRENT_DOMAIN'))
+		{
+			define('CURRENT_DOMAIN', (int)$domain->id);
+		}
+
 		return true;
 	}
 
