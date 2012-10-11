@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/image/drivers
+END
+Image_GD_Driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/image/drivers/Image_GD_Driver.php
+END
+Image_ImageMagick_Driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/image/drivers/Image_ImageMagick_Driver.php
+END

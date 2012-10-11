@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers
+END
+DeleteController.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/DeleteController.php
+END
+ComposeController.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/ComposeController.php
+END
+ActController.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/ActController.php
+END
+ModerateController.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/ModerateController.php
+END
+HidController.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/HidController.php
+END
+SuggestController.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/SuggestController.php
+END
+ViewController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/ViewController.php
+END
+InboxController.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/InboxController.php
+END
+SentController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cars2sell/!svn/ver/26/trunk/protected/modules/message/controllers/SentController.php
+END

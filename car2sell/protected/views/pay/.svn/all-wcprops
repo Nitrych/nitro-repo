@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/pay
+END
+accepted.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/pay/accepted.php
+END
+canceled.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/pay/canceled.php
+END
+declined.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/pay/declined.php
+END
+history.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/pay/history.php
+END
+form.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/pay/form.php
+END

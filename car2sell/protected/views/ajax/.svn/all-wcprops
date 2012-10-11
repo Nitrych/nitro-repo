@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/ajax
+END
+city_by_region.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/ajax/city_by_region.php
+END
+category.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/ajax/category.php
+END
+add_to_favorite.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/ajax/add_to_favorite.php
+END
+city_by_region_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/ajax/city_by_region_list.php
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed
+END
+EFeedItemRSS2.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeedItemRSS2.php
+END
+EFeedTag.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeedTag.php
+END
+EFeedItemAtom.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeedItemAtom.php
+END
+EFeedItemAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeedItemAbstract.php
+END
+EFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeed.php
+END
+EFeedItemRSS1.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cars2sell/!svn/ver/16/trunk/protected/extensions/feed/EFeedItemRSS1.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/cars2sell/!svn/ver/2/trunk/protected/data
+END
+testdrive.db
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cars2sell/!svn/ver/2/trunk/protected/data/testdrive.db
+END
+schema.mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cars2sell/!svn/ver/2/trunk/protected/data/schema.mysql.sql
+END
+schema.sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cars2sell/!svn/ver/2/trunk/protected/data/schema.sqlite.sql
+END

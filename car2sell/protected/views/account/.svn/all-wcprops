@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account
+END
+registration.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/registration.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/login.php
+END
+notify.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/notify.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cars2sell/!svn/ver/12/trunk/protected/views/account/index.php
+END
+activate.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/activate.php
+END
+forgot.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/forgot.php
+END
+settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/account/settings.php
+END

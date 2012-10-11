@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap
+END
+.hg_archival.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/.hg_archival.txt
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/LICENSE.txt
+END
+.hgsub
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/.hgsub
+END
+.hgtags
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/.hgtags
+END
+.hgsubstate
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/.hgsubstate
+END
+.hgignore
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cars2sell/!svn/ver/26/trunk/protected/extensions/bootstrap/.hgignore
+END

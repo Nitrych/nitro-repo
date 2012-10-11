@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cars2sell/!svn/ver/26/trunk/protected/components
+END
+CarUrlRule.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cars2sell/!svn/ver/26/trunk/protected/components/CarUrlRule.php
+END
+UserIdentity.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cars2sell/!svn/ver/2/trunk/protected/components/UserIdentity.php
+END
+Controller.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cars2sell/!svn/ver/2/trunk/protected/components/Controller.php
+END
+Bookmarks.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cars2sell/!svn/ver/2/trunk/protected/components/Bookmarks.php
+END
+AdminMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cars2sell/!svn/ver/2/trunk/protected/components/AdminMenu.php
+END
+WebUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cars2sell/!svn/ver/2/trunk/protected/components/WebUser.php
+END

@@ -1,0 +1,40 @@
+10
+
+dir
+30
+https://subversion.assembla.com/svn/cars2sell/trunk/protected/extensions/bootstrap/assets
+https://subversion.assembla.com/svn/cars2sell
+
+
+
+2012-10-08T11:32:58.747067Z
+26
+cars2sell
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b4d5cfd8-fa8a-41d7-bf5a-4a5bffec27fe
+
+css
+dir
+
+img
+dir
+
+js
+dir
+
+less
+dir
+

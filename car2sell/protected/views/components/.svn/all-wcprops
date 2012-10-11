@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components
+END
+subscription_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/cars2sell/!svn/ver/23/trunk/protected/views/components/subscription_form.php
+END
+filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/filter.php
+END
+similar_block.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/similar_block.php
+END
+post_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/post_functions.php
+END
+similar_block_other_cities.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/similar_block_other_cities.php
+END
+admin_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cars2sell/!svn/ver/2/trunk/protected/views/components/admin_menu.php
+END
+post_block_default.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/post_block_default.php
+END
+post_block_gallery_simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/post_block_gallery_simple.php
+END
+post_block_gallery_wide.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/post_block_gallery_wide.php
+END
+post_block_gallery_big.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/post_block_gallery_big.php
+END
+user_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cars2sell/!svn/ver/26/trunk/protected/views/components/user_menu.php
+END
